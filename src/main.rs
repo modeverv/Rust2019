@@ -39,6 +39,15 @@ f64
     println!("{}", pa.len());
     // スライス
     let middle = &pa[1..4]; // [1,2,3]
+    
+    // if
+    if x == 5 {
+        println!("x は 5 です!");
+    } else if x == 6 {
+        println!("x は 6 です!");
+    } else {
+        println!("x は 5 でも 6 でもありません :(");
+    }
 }
 
 /// # markdown comment!!!
