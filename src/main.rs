@@ -10,7 +10,8 @@ fn main() {
     yyy = 10;
     println!("{}", x);
     print_number(y);
-    println!("{}", add_one(1));
+    println!("インクリメント関数{}", add_one(1));
+    // 関数ポインタ
 }
 
 fn print_number(x: i32) {
@@ -18,7 +19,10 @@ fn print_number(x: i32) {
 }
 
 fn add_one(x: i32) -> i32 {
+    //returnはよろしくないスタイルとされている
+    // return x + 1;
     x + 1
+
 }
 
 
