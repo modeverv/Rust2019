@@ -12,6 +12,8 @@ fn main() {
     print_number(y);
     println!("インクリメント関数{}", add_one(1));
     // 関数ポインタ
+    let f: fn(i32) -> i32 = add_one;
+    println!("インクリメント関数(関数ポインタ) {}", f(1));    
 }
 
 fn print_number(x: i32) {
