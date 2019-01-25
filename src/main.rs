@@ -13,9 +13,40 @@ fn main() {
     println!("インクリメント関数{}", add_one(1));
     // 関数ポインタ
     let f: fn(i32) -> i32 = add_one;
-    println!("インクリメント関数(関数ポインタ) {}", f(1));    
+    println!("インクリメント関数(関数ポインタ) {}", f(1));
+    // プリミティブ
+    // bool
+    let px = true;
+    let py:bool = false;
+    let pc:char = 'x';
+    /*
+i8
+i16
+i32
+i64
+u8
+u16
+u32
+u64
+isize
+usize
+f32
+f64
+     */
+    // 配列
+    let mut pa = [0, 1, 2, 3, 4];
+    // let pa = [0; 20];
+    println!("{}", pa.len());
+    // スライス
+    let middle = &pa[1..4]; // [1,2,3]
 }
 
+/// # markdown comment!!!
+///
+/// ```
+/// usage : print_number(13);
+/// ````
+///
 fn print_number(x: i32) {
     println!("x is: {}", x);
 }
