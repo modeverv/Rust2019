@@ -9,4 +9,16 @@ fn main() {
     let mut yyy = 5;
     yyy = 10;
     println!("{}", x);
+    print_number(y);
+    println!("{}", add_one(1));
 }
+
+fn print_number(x: i32) {
+    println!("x is: {}", x);
+}
+
+fn add_one(x: i32) -> i32 {
+    x + 1
+}
+
+
